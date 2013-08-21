@@ -1,4 +1,5 @@
-moveon-petitions
+moveon-campaigns
 ================
 
-moveon-petitions
+## Welcome to the MoveOn Campaigns plugin for WordPress
+
