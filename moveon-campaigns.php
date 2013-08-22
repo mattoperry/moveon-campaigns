@@ -29,4 +29,20 @@ require_once( plugin_dir_path( __FILE__ ) . 'class.moveon-campaigns.php' );
 
 $MoveOnCampaigns = MoveOn_Campaigns::get_instance();
 
+/** Theme wrapper functions **/
+
+/**
+ * displays a petition
+ *
+ * @since     1.0.0
+ * @param     string name -- the shortname of the petition, the string in the first URI segement of the petition 
+ * @param     string style -- some CSS to apply to the iframe that will contain the peitition
+ * @return    null
+ */
+
+function moveon_campaigns_petition( $name, $style ) {
+	global $MoveOnCampaigns;
+	$MoveOn_Campaigns->petition( $name, $style );
+}
+
 ?>
