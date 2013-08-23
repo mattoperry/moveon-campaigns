@@ -26,8 +26,16 @@ if ( ! defined( 'WPINC' ) ) {
 }
 
 require_once( plugin_dir_path( __FILE__ ) . 'class.moveon-campaigns.php' );
+require_once( plugin_dir_path( __FILE__ ) . 'class.moveon-campaigns-widget.php' );
 
-$MoveOnCampaigns = MoveOn_Campaigns::get_instance();
+//instantiate the plugin's class
+$MoveOnCampaigns = Moveon_Campaigns::get_instance();
+
+//register widgets
+function moveon_campaigns_register_widgets() {
+	register_widget( 'Moveon_Campaigns_Widget' );
+}
+add_action( 'widgets_init', 'moveon_campaigns_register_widgets' );
 
 /** Theme wrapper functions **/
 
