@@ -50,7 +50,7 @@ add_action( 'widgets_init', 'moveon_campaigns_register_widgets' );
 
 function moveon_campaigns_petition( $name, $style ) {
 	global $MoveOnCampaigns;
-	$MoveOn_Campaigns->petition( $name, $style );
+	$MoveOnCampaigns->petition( $name, $style );
 }
 
 ?>

@@ -25,7 +25,7 @@ class Moveon_Campaigns_Widget extends WP_Widget {
 	public function widget( $args, $instance ) {
 		
 		$height = ( $instance['petition_height'] ) ?: '500';
-		$style =  "min-width:inherit;  height: {$height}px";
+		$style =  "min-width:270px;  height: {$height}px";
 
 		$html = ( !empty( $instance['petition_id'] ) ) ? $this->MOC->petition( $instance['petition_id'], $style, true ) : '';	
 		if ( $html ) {
