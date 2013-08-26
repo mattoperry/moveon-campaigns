@@ -114,7 +114,11 @@ class Moveon_Campaigns {
 			'height' => '400',
 		), $atts ) );
 
-		return $this->petition( $name, "height:".$height."px; width:".$width."px", true );	
+		if ( trim($name) ) {
+			return $this->petition( $name, "height:".$height."px; width:".$width."px", true );	
+		}else{
+			return false;
+		}
 	}
 
 

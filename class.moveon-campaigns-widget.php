@@ -41,7 +41,7 @@ class Moveon_Campaigns_Widget extends WP_Widget {
 
  		?>
 		<p>
-			<label for="<?php echo $this->get_field_name( 'petition_id' ); ?>"><?php echo 'Petition ID &nbsp &nbsp <a href="http://front.moveon.org/petitions-plugin" target="_blank" style="font-size: .8em;">[about]</a>'; ?></label> 
+			<label for="<?php echo $this->get_field_name( 'petition_id' ); ?>"><?php echo 'Petition Name &nbsp &nbsp <a href="http://front.moveon.org/petitions-plugin" target="_blank" style="font-size: .8em;">[about]</a>'; ?></label> 
 			<input class="widefat" id="<?php echo $this->get_field_id( 'petition_id' ); ?>" name="<?php echo $this->get_field_name( 'petition_id' ); ?>" type="text" value="<?php echo esc_attr( $petition_id ); ?>" />
 		</p>
 		<p>
