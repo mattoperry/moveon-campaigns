@@ -16,7 +16,7 @@ A great way to promote a MoveOn petition campaign is to feature it on your blog 
 
 This plugin provides *three ways* to integrate a campaign into your site:
 
-* A sidebar widget:  a new MoveOn Campaign widget type will appear, and be elligible for placement in your widget areas.
+* A sidebar widget:  a new MoveOn Campaign widget type will appear, and be eligible for placement in your widget areas.
 * A shortcode:  use the `[moveon-campaigns-petition]` shortcode in your content to embed a petition directly in a post.
 * A template function: you can call the function `moveon_campaigns_petition` from anywhere in your theme.
 
