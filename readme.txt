@@ -31,6 +31,10 @@ This plugin provides *three ways* to integrate a campaign into your site:
 
 In order to identify the petition you'd like to embed, you'll need the petition name -- a unique identifier for your MoveOn petition.  To find it, go to the petition's home on MoveOn.  The URL will have the form: `http://petitions.moveon.org/sign/PETITION-NAME?possibly-some-other-stuff`.  The petition name the portion of the URL found after the /sign/ segment, excluding any GET string.  In the (non-real) example above, the petition id would be `PETITION-NAME`.
 
+= How do I use the shortcode? =
+
+The usage is: `[moveon-campaigns-petition name="PETITION-NAME" height="HEIGHT" width="WIDTH"]`.  HEIGHT and WIDTH should be numeric, and will be interpreted as a number of pixels.
+
 = Can I change the design for formatting of the widget? =
 
 In general no, although you can change the size and style of the iframe containing the petition by using the appropriate tools.  For sidebar widgets, specify a height that works with the length of your particular petition.  For shortodes, you can specify both a height and width.  If using the `moveon_campaigns_petition` in your theme, use the `style` argument to pass CSS to the iframe containing the peititon (that is, the iframe element, not the contents thereof.)  If you have suggestions about how we might improve the formatting or design of the widget, or if you're a partner organization with specific needs, please contact us.
